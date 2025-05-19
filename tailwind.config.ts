@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for Parabola Magica
+				parabola: {
+					50: '#fff1f1',
+					100: '#ffe1e1',
+					200: '#ffc7c7',
+					300: '#ff9e9e',
+					400: '#ff6464',
+					500: '#ff3a3a',
+					600: '#ff1f1f',
+					700: '#e50000',
+					800: '#c50000',
+					900: '#9f0909',
+					950: '#520000',
+				},
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'parabola-gradient': 'linear-gradient(180deg, #fff1f1 0%, #ff9e9e 50%, #9f0909 100%)',
+				'parabola-light': 'linear-gradient(180deg, #ffffff 0%, #ffe1e1 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

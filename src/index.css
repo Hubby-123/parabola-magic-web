@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +99,42 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom styles for Parabola Magica */
+body {
+  @apply font-sans;
+}
+
+.page-container {
+  @apply min-h-screen flex flex-col;
+}
+
+.content-container {
+  @apply flex-grow;
+}
+
+/* Navbar height offset for fixed navbar */
+main {
+  @apply pt-16; /* Adjust based on navbar height */
+}
+
+/* Add smooth scrolling to the whole document */
+html {
+  @apply scroll-smooth;
+}
+
+/* Additional animations */
+.hover-lift {
+  @apply transition-transform duration-300;
+}
+
+.hover-lift:hover {
+  @apply -translate-y-1;
+}
+
+/* For the gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(to right, #9f0909, #ff6464);
 }
